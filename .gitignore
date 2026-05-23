@@ -6,7 +6,7 @@
 venv/
 node_modules/
 .vercel/
+dist/
 AGENTS.md
 DESIGN_SYSTEM.md
 START_AGENT_TEAM_PROMPT.txt
-.vercel
