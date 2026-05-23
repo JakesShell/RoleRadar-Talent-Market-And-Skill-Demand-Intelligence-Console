@@ -1,0 +1,10 @@
+{
+  "name": "roleradar-talent-market-skill-demand-intelligence-console",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static talent market and skill demand intelligence dashboard with Python analysis tooling kept separately.",
+  "scripts": {
+    "build": "node build-static.js",
+    "check": "node --check app.js && node --check build-static.js"
+  }
+}
