@@ -1,5 +1,9 @@
 ﻿# RoleRadar Talent Market & Skill Demand Intelligence Console
 
+## Live Demo
+
+[Open the live deployed app](https://roleradar-static-talent-market-console-3zpyvgflj.vercel.app)
+
 RoleRadar is a Python and browser-based talent intelligence project for analyzing job market listings, hiring demand, role categories, company activity, and location concentration.
 
 ## Project Purpose
@@ -46,3 +50,4 @@ This project began as a Python job-listing parser and was upgraded into a practi
 
 ```powershell
 Start-Process .\index.html
+
