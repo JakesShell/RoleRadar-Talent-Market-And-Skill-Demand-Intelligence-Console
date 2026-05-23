@@ -1,56 +1,49 @@
-﻿# Talent Market Listing Analyzer
+﻿# RoleRadar Talent Market & Skill Demand Intelligence Console
 
-## Overview
+RoleRadar is a Python and browser-based talent intelligence project for analyzing job market listings, hiring demand, role categories, company activity, and location concentration.
 
-Talent Market Listing Analyzer is a Python-based utility for parsing local HTML exports of job listings and converting them into structured CSV output for hiring market review.
+## Project Purpose
 
-This project is positioned as a recruiter-ready Python portfolio piece. It upgrades a simple web scraper concept into a more practical business-facing analysis tool that better fits recruiting operations, market research, talent intelligence, and hiring trend review workflows.
+This project began as a Python job-listing parser and was upgraded into a more practical talent market intelligence console. It demonstrates how raw job board exports can be converted into structured CSV data and presented as a business-facing dashboard for recruiting operations, workforce planning, or career strategy.
 
-## Real-World Business Use Case
+## Features
 
-This project maps to practical workflows used by:
-
-- Recruiting Operations Teams
-- Talent Intelligence Workflows
-- Hiring Market Research
-- Workforce Planning Support
-- Python Data Utility Development
-
-A team may need to answer questions such as:
-
-- Which roles are appearing most often in a job export?
-- Which companies are hiring in specific markets?
-- Which locations show the strongest activity?
-- How can job listing data be turned into a structured CSV for review?
-
-This utility is useful for local listing analysis, CSV generation, and portfolio demonstration of turning a fragile scraping concept into a cleaner market-analysis workflow.
-
-## Key Features
-
-- Local HTML Listing Parsing
-- Structured Title, Company, And Location Extraction
-- CSV Export
-- Listing Summary Output
-- Company And Location Counts
-- Lightweight Python CLI Workflow
+- Local HTML job listing parser
+- Structured CSV export
+- Role category detection
+- Market signal generation
+- Company and location counts
+- Top hiring location summary
+- Browser-based market intelligence dashboard
+- Role demand breakdown
+- Location concentration cards
+- Parsed listing table
+- Opportunity summary panel
+- Responsive full-screen dashboard layout
+- Wide-screen and zoomed-out layout support
 
 ## Tech Stack
 
 - Python
 - BeautifulSoup
 - pandas
+- HTML
+- CSS
+- JavaScript
 
 ## Repository Contents
 
 - `MarketListingAnalyzer.py`
-- `requirements.txt`
+- `WebScraper.py`
 - `sample_job_board.html`
-- `README.md`
-- `.gitignore`
+- `talent_market_listings.csv`
+- `index.html`
+- `styles.css`
+- `app.js`
+- `requirements.txt`
 
-## How To Run
-
-### 1. Install Dependencies
+## Run The Python Analyzer
 
 ```powershell
 pip install -r requirements.txt
+python .\MarketListingAnalyzer.py

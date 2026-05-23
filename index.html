@@ -1,0 +1,158 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RoleRadar | Talent Market & Skill Demand Intelligence Console</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="market-background"></div>
+
+  <header class="topbar">
+    <div>
+      <div class="brand">RoleRadar</div>
+      <div class="brand-subtitle">Talent Market & Skill Demand Intelligence Console</div>
+    </div>
+
+    <nav class="nav">
+      <a href="#overview">Overview</a>
+      <a href="#roles">Roles</a>
+      <a href="#locations">Locations</a>
+      <a href="#insights">Insights</a>
+    </nav>
+  </header>
+
+  <main class="app-shell">
+    <section class="layout-grid">
+      <aside class="panel dark-panel side-rail">
+        <div class="eyebrow">MARKET INTELLIGENCE</div>
+        <h1>Talent demand radar</h1>
+        <p>
+          Analyze job listings, hiring activity, role demand, location concentration,
+          and career-market opportunity from one lightweight console.
+        </p>
+
+        <div class="rail-card">
+          <span>Primary use</span>
+          <strong>Recruiting and career strategy</strong>
+          <small>Demo portfolio dashboard</small>
+        </div>
+
+        <div class="rail-card">
+          <span>Source type</span>
+          <strong>Local job board export</strong>
+          <small>Parsed from sample HTML and CSV data</small>
+        </div>
+
+        <div class="rail-card">
+          <span>Strategic lens</span>
+          <strong>Cloud, data, security, and product roles</strong>
+          <small>Market signals for role targeting</small>
+        </div>
+      </aside>
+
+      <section class="workspace">
+        <section class="panel hero-panel" id="overview">
+          <div class="hero-copy">
+            <div class="eyebrow">HIRING MARKET COMMAND</div>
+            <h2>Turn raw job listings into market direction.</h2>
+            <p>
+              RoleRadar converts listing exports into a readable intelligence layer for
+              skill demand, hiring clusters, role categories, and practical next steps.
+            </p>
+          </div>
+
+          <div class="hero-control">
+            <label for="marketFilter">Market focus</label>
+            <select id="marketFilter">
+              <option value="all">All listings</option>
+              <option value="cloud">Cloud & security</option>
+              <option value="product">Product & design</option>
+              <option value="operations">Operations & coordination</option>
+            </select>
+          </div>
+        </section>
+
+        <section class="metric-grid" id="metricGrid"></section>
+
+        <section class="analysis-grid">
+          <article class="panel chart-panel" id="roles">
+            <div class="section-heading">
+              <div>
+                <div class="eyebrow">ROLE DEMAND</div>
+                <h3>Category breakdown</h3>
+              </div>
+              <span id="roleCountBadge" class="badge">5 listings</span>
+            </div>
+            <div id="roleDemandList" class="bar-list"></div>
+          </article>
+
+          <article class="panel chart-panel" id="locations">
+            <div class="section-heading">
+              <div>
+                <div class="eyebrow">LOCATION SIGNALS</div>
+                <h3>Hiring concentration</h3>
+              </div>
+            </div>
+            <div id="locationList" class="location-list"></div>
+          </article>
+        </section>
+
+        <section class="panel table-panel">
+          <div class="section-heading">
+            <div>
+              <div class="eyebrow">LISTING INTELLIGENCE</div>
+              <h3>Parsed job market records</h3>
+            </div>
+          </div>
+
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Role</th>
+                  <th>Company</th>
+                  <th>Location</th>
+                  <th>Category</th>
+                  <th>Market Signal</th>
+                </tr>
+              </thead>
+              <tbody id="listingTable"></tbody>
+            </table>
+          </div>
+        </section>
+      </section>
+
+      <aside class="panel action-panel" id="insights">
+        <div class="eyebrow">OPPORTUNITY SUMMARY</div>
+        <h2 id="summaryTitle">Cloud and security signal detected</h2>
+        <p id="summaryCopy">
+          Technical operations roles show useful demand in the sample listing set.
+        </p>
+
+        <div class="score-ring">
+          <div>
+            <strong id="opportunityScore">78%</strong>
+            <span>Opportunity Fit</span>
+          </div>
+        </div>
+
+        <button class="primary-btn">Generate Market Brief</button>
+        <button class="secondary-btn">Reset View</button>
+
+        <div class="note-box">
+          Prototype only. This dashboard uses sample/local listing data and does not scrape live job boards in production.
+        </div>
+
+        <div class="next-actions">
+          <div class="small-title">Recommended next actions</div>
+          <ul id="nextActions"></ul>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

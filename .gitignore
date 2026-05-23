@@ -1,5 +1,11 @@
-.venv/
-__pycache__/
+﻿__pycache__/
 *.pyc
+*.pyo
 *.bak
-*.csv
+.venv/
+venv/
+node_modules/
+.vercel/
+AGENTS.md
+DESIGN_SYSTEM.md
+START_AGENT_TEAM_PROMPT.txt
