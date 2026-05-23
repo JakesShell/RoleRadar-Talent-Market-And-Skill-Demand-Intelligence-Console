@@ -4,7 +4,7 @@ RoleRadar is a Python and browser-based talent intelligence project for analyzin
 
 ## Project Purpose
 
-This project began as a Python job-listing parser and was upgraded into a more practical talent market intelligence console. It demonstrates how raw job board exports can be converted into structured CSV data and presented as a business-facing dashboard for recruiting operations, workforce planning, or career strategy.
+This project began as a Python job-listing parser and was upgraded into a practical talent market intelligence console. It demonstrates how raw job board exports can be converted into structured CSV data and presented as a business-facing dashboard for recruiting operations, workforce planning, or career strategy.
 
 ## Features
 
@@ -33,17 +33,16 @@ This project began as a Python job-listing parser and was upgraded into a more p
 
 ## Repository Contents
 
-- `MarketListingAnalyzer.py`
-- `WebScraper.py`
-- `sample_job_board.html`
-- `talent_market_listings.csv`
 - `index.html`
 - `styles.css`
 - `app.js`
-- `requirements.txt`
+- `tools/MarketListingAnalyzer.py`
+- `tools/WebScraper.py`
+- `tools/sample_job_board.html`
+- `tools/talent_market_listings.csv`
+- `tools/requirements.txt`
 
-## Run The Python Analyzer
+## Run The Browser Dashboard
 
 ```powershell
-pip install -r requirements.txt
-python .\MarketListingAnalyzer.py
+Start-Process .\index.html
