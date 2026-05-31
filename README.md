@@ -51,3 +51,10 @@ This project began as a Python job-listing parser and was upgraded into a practi
 ```powershell
 Start-Process .\index.html
 
+
+---
+
+## Dashboard Preview
+
+![RoleRadar Talent Market Intelligence Dashboard](docs/screenshots/roleradar-dashboard-overview.png)
+
